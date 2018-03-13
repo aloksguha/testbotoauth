@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-const CLIENT_ID = '323105054656.323954295283';
-const CLIENT_SECRET='ccd2a9149a30efe7bbc31e79cf4cbbb0';
+const CLIENT_ID = process.env.SLACK_CLIENT_ID;
+const CLIENT_SECRET=process.env.SLACK_CLIENT_SECRET; 
 
 
 var an = analyzer.chatanalyzer();
